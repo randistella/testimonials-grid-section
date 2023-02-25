@@ -1,0 +1,45 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+          'daniel daniel jon kira'
+          'jean patrick patrick kira';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .item1 { grid-area: daniel; }
+    .item2 { grid-area: jon; }
+    .item3 { grid-area: kira; }
+    .item4 { grid-area: jean; }
+    .item5 { grid-area: patrick; }
+
+    // responsive 
+    @media only screen and (max-width: 768px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'daniel'
+        'jon'
+        'jean'
+        'patrick'
+        'kira';
+      }
+    }
+  }
