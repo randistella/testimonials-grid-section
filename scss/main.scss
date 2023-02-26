@@ -6,6 +6,7 @@
     $md-gray: #94999D;
     $lt-gray: #D9DEE5;
     $lt-white: #FEFEFF;
+    $transparent:rgba(255, 255, 255, 0.7);
     
     * {
       box-sizing: border-box;
@@ -32,16 +33,43 @@
       padding: 25px;
       font-size: 13px;
       border-radius: 10px;
+      box-shadow: 6px 7px 33px -14px rgba(0,0,0,0.53);
+      -webkit-box-shadow: 6px 7px 33px -14px rgba(0,0,0,0.53);
+      -moz-box-shadow: 6px 7px 33px -14px rgba(0,0,0,0.53);
+    }
+
+  // icon and name
+    .name {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      margin-bottom: 10px;;
     }
 
     img {
       border-radius: 100%;
+      border: 2px solid $transparent;
+      width: 40px;
     }
 
-    .name {
-      display: inline-block
+    h3 {
+      margin-left: 15px;
+      font-size: 13px;
+      color: $transparent;
+
+      .lt {
+        font-size: 12px;
+        color:rgba(255, 255, 255, 0.4);
+      }
+
+      .dk {
+        font-size: 12px;
+        color:rgba(0, 0, 0, 0.4);
+      }
     }
 
+  // boxes
     .item1 { 
       grid-area: daniel;
       background: $purple; 
@@ -58,12 +86,29 @@
       grid-area: kira; 
       background: $lt-white;
       color: $drk-gray;
+
+      h3 {
+        color:rgba(0, 0, 0, 0.4);
+      }
+
+      img {
+        border: 2px solid rgba(0, 0, 0, 0.4);
+      }
     }
 
     .item4 { 
       grid-area: jean;
       background: $lt-white;
       color: $drk-gray;
+      
+      h3 {
+        color:rgba(0, 0, 0, 0.4);
+      }
+
+      img {
+        border: 2px solid rgba(0, 0, 0, 0.4);
+      }
+
     }
 
     .item5 { 
