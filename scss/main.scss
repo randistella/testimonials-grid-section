@@ -24,13 +24,13 @@
           'daniel daniel jon kira'
           'jean patrick patrick kira';
         gap: 40px;
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 10vw auto;
     }
 
     .grid-container > div {
       text-align: left;
-      padding: 25px;
+      padding: 30px;
       font-size: 13px;
       border-radius: 10px;
       box-shadow: 6px 7px 33px -14px rgba(0,0,0,0.53);
@@ -57,16 +57,25 @@
       margin-left: 15px;
       font-size: 13px;
       color: $transparent;
+    }
 
-      .lt {
-        font-size: 12px;
-        color:rgba(255, 255, 255, 0.4);
-      }
+    .lt {
+      font-size: 12px;
+      color:rgba(255, 255, 255, 0.4);
+    }
 
-      .dk {
-        font-size: 12px;
-        color:rgba(0, 0, 0, 0.4);
-      }
+    .dk {
+      font-size: 12px;
+      color:rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 13px;
     }
 
   // boxes
